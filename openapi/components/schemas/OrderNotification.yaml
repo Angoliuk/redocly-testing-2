@@ -6,7 +6,10 @@ required:
 properties:
   orderId:
     type: string
-    description: Unique order identifier.
+    description: Unique order identifier prefixed with `ord_`.
+    format: ulid
+    pattern: ^ord_[0-9abcdefghjkmnpqrstvwxyz]{26}$
+    example: ord_01h1s5z6vf2mm1mz3hevnn9va7
   orderStatus:
     $ref: ./OrderStatus.yaml
   timestamp:
