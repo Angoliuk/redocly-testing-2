@@ -2,6 +2,7 @@ type: object
 properties:
   menuItemId:
     type: string
+    format: ulid
     description: ID of the menu item to add to the order.
     writeOnly: true
   menuItem:
