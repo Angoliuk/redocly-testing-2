@@ -2,13 +2,11 @@ type: object
 description: Revenue statistics for a given date range.
 properties:
   revenue:
-    type: number
-    format: float
+    type: integer
     description: Total revenue in cents from completed orders.
     minimum: 0
   averageOrderAmount:
-    type: number
-    format: float
+    type: integer
     description: Average order amount in cents (calculated from completed orders only).
     minimum: 0
   totalOrders:
