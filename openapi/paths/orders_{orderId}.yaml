@@ -22,13 +22,22 @@ get:
                 id: ord_01h1s5z6vf2mm1mz3hevnn9va7
                 customerName: Mary Ann
                 orderItems:
-                  - menuItemId: prd_01h1s5z6vf2mm1mz3hevnn9va7
+                  - menuItem:
+                      id: prd_01h1s5z6vf2mm1mz3hevnn9va7
+                      object: menuItem
+                      name: coffee
+                      price: 4000
+                      category: beverage
+                      createdAt: '2026-08-24T14:15:22Z'
+                      updatedAt: '2026-08-24T14:15:22Z'
+                      volume: 600
+                      containsCaffeine: false
                     quantity: 2
                     comment: No sugar!
                     discount: 0
                 object: order
                 status: placed
-                totalPrice: 200
+                totalPrice: 8000
                 createdAt: 2026-08-24T14:15:22Z
                 updatedAt: 2026-08-24T14:15:22Z
     '400':
@@ -79,13 +88,22 @@ patch:
                 id: ord_01h1s5z6vf2mm1mz3hevnn9va7
                 customerName: Mary Ann
                 orderItems:
-                  - menuItemId: prd_01h1s5z6vf2mm1mz3hevnn9va7
+                  - menuItem:
+                      id: prd_01h1s5z6vf2mm1mz3hevnn9va7
+                      object: menuItem
+                      name: coffee
+                      price: 4000
+                      category: beverage
+                      createdAt: '2026-08-24T14:15:22Z'
+                      updatedAt: '2026-08-24T14:15:22Z'
+                      volume: 600
+                      containsCaffeine: false
                     quantity: 2
                     comment: No sugar!
                     discount: 0
                 object: order
                 status: completed
-                totalPrice: 200
+                totalPrice: 8000
                 createdAt: 2026-08-24T14:15:22Z
                 updatedAt: 2026-08-24T14:15:22Z
     '400':
